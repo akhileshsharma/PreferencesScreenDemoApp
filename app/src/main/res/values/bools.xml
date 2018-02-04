@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <bool name="auto_upload_default_value">true</bool>
+    <bool name="message_notification_default_value">false</bool>
+    <bool name="vibrate_default_value">true</bool>
+</resources>

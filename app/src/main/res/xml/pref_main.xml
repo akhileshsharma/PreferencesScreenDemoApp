@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="General">
+        <EditTextPreference
+            android:defaultValue="@string/store_by_name_default_value"
+            android:key="@string/store_by_name_key"
+            android:summary="My videos"
+            android:title="Default Storage" />
+
+        <CheckBoxPreference
+            android:defaultValue="@bool/auto_upload_default_value"
+            android:key="@string/auto_upload_key"
+            android:summaryOn="Auto Upload Over Wifi"
+            android:summaryOff="Do Not Auto Upload Over Wifi"
+            android:title="Auto Upload" />
+
+        <ListPreference
+            android:defaultValue="@string/upload_quality_default_value"
+            android:dialogTitle="Upload Quality"
+            android:entries="@array/pref_upload_quality_entries"
+            android:entryValues="@array/pref_upload_quality_values"
+            android:key="@string/upload_quality_key"
+            android:summary="@string/upload_quality_default_value"
+            android:title="Upload Quality" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Notification">
+
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/message_notification_default_value"
+            android:key="@string/message_notification_key"
+            android:summaryOn="Notify on New Message"
+            android:summaryOff="Do not Notify on New Message"
+            android:title="New Message Notification" />
+
+        <SwitchPreferenceCompat
+            android:defaultValue="@bool/vibrate_default_value"
+            android:key="@string/vibrate_key"
+            android:summaryOn="Vibrate on New Notification"
+            android:summaryOff="Do not vibrate on New Notification"
+            android:title="Vibrate" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="About">
+
+        <Preference
+            android:selectable="false"
+            android:summary="Its my demo for implementing Preferences in Android"
+            android:title="Whats in this App" />
+
+        <Preference
+            android:summary="1.0"
+            android:title="Version" />
+
+        <!-- preference opens url in browser -->
+        <Preference
+            android:summary="Our website, this will open in a browser"
+            android:title="Website">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="www.google.com" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

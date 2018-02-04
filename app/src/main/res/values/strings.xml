@@ -1,0 +1,18 @@
+<resources>
+
+    <string name="app_name">preferencesDemoApp</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="store_by_name_key">storeByName</string>
+    <string name="store_by_name_default_value">My videos</string>
+
+    <string name="auto_upload_key">autoUpload</string>
+
+    <string name="upload_quality_key">uploadQuality</string>
+    <string name="upload_quality_default_value">1080p</string>
+
+
+    <string name="message_notification_key">messageNotification</string>
+    <string name="vibrate_key">vibrate</string>
+
+</resources>
